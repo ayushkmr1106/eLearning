@@ -60,4 +60,4 @@ jobs:
         with:
           app-name: 'elearningwebapp'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_54A680DA51BA4AEFB1B3B597DDA173EA }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_24C31F2AA6974FA49BDE8760234044FE }}
