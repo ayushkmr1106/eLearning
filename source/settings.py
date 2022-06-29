@@ -25,7 +25,7 @@ SECRET_KEY = '^5b8p7m5j5*w9b=@9g3p4ixy=3!ycpw-ruf0#xj%v)!0cj4h2e'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*', 'https://elearningquadsquad.azurewebsites.net',]
+ALLOWED_HOSTS = ['*', 'elearningquadsquad.azurewebsites.net',]
 
 
 # Application definition
@@ -45,7 +45,8 @@ INSTALLED_APPS = [
     # My apps
     'users',
     'courses',
-    'forum'
+    'forum',
+    'storages',
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -183,3 +184,14 @@ if os.path.isfile(settings_sensitive):
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 
 AUTH_USER_MODEL = 'users.UserProfile'
+
+DEFAULT_FILE_STORAGE = 'source.custom_azure.AzureMediaStorage'
+STATICFILES_STORAGE = 'source.custom_azure.AzureStaticStorage'
+
+STATIC_LOCATION = "static"
+MEDIA_LOCATION = "media"
+
+AZURE_ACCOUNT_NAME = "storageaccquadsquad"
+AZURE_CUSTOM_DOMAIN = f'{AZURE_ACCOUNT_NAME}.blob.core.windows.net'
+STATIC_URL = f'https://{AZURE_CUSTOM_DOMAIN}/{STATIC_LOCATION}/'
+MEDIA_URL = f'https://{AZURE_CUSTOM_DOMAIN}/{MEDIA_LOCATION}/'
