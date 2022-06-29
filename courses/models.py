@@ -25,7 +25,7 @@ class Chapter(models.Model):
     chapter_name = models.CharField(max_length=20)
     chapter_created_date = models.DateTimeField(auto_now_add=True)
     course = models.ForeignKey(Course, on_delete=models.CASCADE, default=1)
-    slug = models.SlugField(unique=True)
+    slug = models.SlugField(max_length=255,unique=True)
 
     def __unicode__(self):
         return self.chapter_name

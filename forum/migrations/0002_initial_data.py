@@ -17,7 +17,7 @@ def initial_topic(apps, schema_editor):
           ).save()
 
     topic(author='Adam',
-          subject='Dude where is my course!',
+          subject='Where is course!',
           slug=slugify('Dude where is my course!'),
           topic_message='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id commodo turpis.'
                         ' Phasellus at congue ipsum. Aliquam congue mi at faucibus porttitor. Sed lectus magna, luctus'
@@ -27,8 +27,8 @@ def initial_topic(apps, schema_editor):
           ).save()
 
     topic(author='Kate',
-          subject='I have questions about my account',
-          slug=slugify('I have questions about my account'),
+          subject='about my account',
+          slug=slugify('about my account'),
           topic_message='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id commodo turpis.'
                         ' Phasellus at congue ipsum. Aliquam congue mi at faucibus porttitor. Sed lectus magna, luctus'
                         ' ac felis a, ultricies tincidunt massa. Etiam sit amet convallis orci, eu pellentesque nisi.'
@@ -37,8 +37,8 @@ def initial_topic(apps, schema_editor):
           ).save()
 
     topic(author='Pete',
-          subject='What is going on with this course!?',
-          slug=slugify('What is going on with this course!?'),
+          subject='What is going on?',
+          slug=slugify('What is going on?'),
           topic_message='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id commodo turpis.'
                         ' Phasellus at congue ipsum. Aliquam congue mi at faucibus porttitor. Sed lectus magna, luctus'
                         ' ac felis a, ultricies tincidunt massa. Etiam sit amet convallis orci, eu pellentesque nisi.'
@@ -56,49 +56,10 @@ def initial_topic(apps, schema_editor):
                         ' eleifend. '
           ).save()
 
-    topic(author='Hope',
-          subject='Video is not responding in math course',
-          slug=slugify('Video is not responding in math course'),
-          topic_message='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id commodo turpis.'
-                        ' Phasellus at congue ipsum. Aliquam congue mi at faucibus porttitor. Sed lectus magna, luctus'
-                        ' ac felis a, ultricies tincidunt massa. Etiam sit amet convallis orci, eu pellentesque nisi.'
-                        ' Pellentesque eu egestas arcu. Curabitur venenatis pulvinar diam, at ullamcorper nisi pharetra'
-                        ' eleifend. '
-          ).save()
-
-    topic(author='Ana',
-          subject='Where are my teaching blocks!??',
-          slug=slugify('Where are my teaching blocks!??'),
-          topic_message='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id commodo turpis.'
-                        ' Phasellus at congue ipsum. Aliquam congue mi at faucibus porttitor. Sed lectus magna, luctus'
-                        ' ac felis a, ultricies tincidunt massa. Etiam sit amet convallis orci, eu pellentesque nisi.'
-                        ' Pellentesque eu egestas arcu. Curabitur venenatis pulvinar diam, at ullamcorper nisi pharetra'
-                        ' eleifend. '
-          ).save()
 
     topic(author='Layla',
           subject='Course start date',
           slug=slugify('Course start date'),
-          topic_message='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id commodo turpis.'
-                        ' Phasellus at congue ipsum. Aliquam congue mi at faucibus porttitor. Sed lectus magna, luctus'
-                        ' ac felis a, ultricies tincidunt massa. Etiam sit amet convallis orci, eu pellentesque nisi.'
-                        ' Pellentesque eu egestas arcu. Curabitur venenatis pulvinar diam, at ullamcorper nisi pharetra'
-                        ' eleifend. '
-          ).save()
-
-    topic(author='Penny',
-          subject='Profile settings issue',
-          slug=slugify('Profile settings issue'),
-          topic_message='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id commodo turpis.'
-                        ' Phasellus at congue ipsum. Aliquam congue mi at faucibus porttitor. Sed lectus magna, luctus'
-                        ' ac felis a, ultricies tincidunt massa. Etiam sit amet convallis orci, eu pellentesque nisi.'
-                        ' Pellentesque eu egestas arcu. Curabitur venenatis pulvinar diam, at ullamcorper nisi pharetra'
-                        ' eleifend. '
-          ).save()
-
-    topic(author='Yolo',
-          subject="Don't have access to profile page!!",
-          slug=slugify("Don't have access to profile page!!"),
           topic_message='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id commodo turpis.'
                         ' Phasellus at congue ipsum. Aliquam congue mi at faucibus porttitor. Sed lectus magna, luctus'
                         ' ac felis a, ultricies tincidunt massa. Etiam sit amet convallis orci, eu pellentesque nisi.'
